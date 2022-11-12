@@ -28,7 +28,7 @@ const TASK_RETRY_TIME = +(process.env.TASK_RETRY_TIME || 0) || 3000;
 // max try time for search
 const SEARCH_TRY_TIME = process.env.SEARCH_TRY_TIME === undefined ? 3 : +process.env.SEARCH_TRY_TIME;
 
-const DIST_DIR = `files/${getCurrentDateFormat()}`
+const DIST_DIR = `../files/${getCurrentDateFormat()}`
 
 const errorFileName = 'error';
 
@@ -42,7 +42,7 @@ async function timeout(ms: number) {
 
 function getCurrentDateFormat() {
     const date = new Date();
-    [date.getFullYear(), padTo2Digits(date.getMonth() + 1), padTo2Digits(date.getDate())].join('')
+    return [date.getFullYear(), padTo2Digits(date.getMonth() + 1), padTo2Digits(date.getDate())].join('')
         + '_' +
         [
             padTo2Digits(date.getHours()),
