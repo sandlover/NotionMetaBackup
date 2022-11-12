@@ -37,11 +37,11 @@ $ npm run build
 | -- | -- | -- |
 | NOTION_TOKEN | notion integration的token | - |
 | http_proxy | 代理设置 | - |
-| CLIENT_TIMEOUT | notion sdk 超时时间 | 10s |
+| CLIENT_TIMEOUT | notion sdk 超时时间 | 10000 |
 | LOG_LEVEL | 日志等级 | 'info' |
 | TASK_TRY_TIME | 备份任务自动重试次数 | 10 |
-| API_RETRY_TIME | API请求失败后等待时间 | 1s |
-| TASK_RETRY_TIME | 备份任务失败后等待时间 | 3s |
+| API_RETRY_TIME | API请求失败后等待时间 | 1000 |
+| TASK_RETRY_TIME | 备份任务失败后等待时间 | 3000 |
 | SEARCH_TRY_TIME | API请求失败重试次数 | 3 |
 
 
